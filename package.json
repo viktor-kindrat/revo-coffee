@@ -13,7 +13,8 @@
   },
   "main": "web.js",
   "scripts": {
-    "start": "npm start && node script.js"
+    "start": "node script.js",
+    "npm": "npm start"
   },
   "keywords": [
     "example",
