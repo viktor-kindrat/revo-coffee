@@ -1,5 +1,5 @@
-let host = '127.0.0.1';
-let port = 43760;
+let host = '0.0.0.0';
+let port = 3000;
 
 let express = require('express');
 // let favicon = require('serve-favicon');
