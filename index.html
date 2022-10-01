@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,52 @@
     <title>revo - your personailized coffee</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
+
 <body>
     <div class="wrap">
-        fbbfgb
+        <main class="main">
+            <section class="home">
+                <!-- left -->
+                <div class="home__left">
+                    <img alt="logo" src="./image/logo.svg" class="home__logo">
+                    <h1 class="home__headline">
+                        YOUR <br>
+                        <span class="home__typer"></span> <br>
+                        COFFEE <br>
+                    </h1>
+                </div>
+                <!-- video  -->
+                <div class="home__video-wrap">
+                    <div class="home__play-btn">
+                        <div class="home__play"></div>
+                    </div>
+                    <video preload="metadata" class="home__video" width="" height="900" poster="./image/video-poster.png">
+                        <source src="./videos/main.mp4" type="video/mp4">
+                        <source src="./videos/main.webm" type="video/webm">
+                    </video>
+                </div>
+                <!-- right  -->
+                <div class="home__right">
+                    <div class="cart">
+                        <div class="cart__indicator">0</div>
+                        <img height="25" width="25" src="./image/icons/shopping-cart.svg" alt="cart" class="cart__image">
+                    </div>
+                    <nav class="home__nav">
+                        <div class="home__nav-item home__nav-item_active">TRANG CHỦ</div>
+                        <div class="home__nav-item">COFFEE</div>
+                        <div class="home__nav-item">PHIN MẠ MÀU</div>
+                        <div class="home__nav-item">COMBO PHIN PHÊ</div>
+                        <div class="home__nav-item">GIFTSET</div>
+                        <div class="home__nav-item">LIÊN HỆ</div>
+                    </nav>
+                </div>
+            </section>
+        </main>
     </div>
     <script src="./javaScript/main.js"></script>
+    <script src="./javaScript/typed.js"></script>
 </body>
+
 </html>
