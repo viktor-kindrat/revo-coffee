@@ -4,7 +4,7 @@ let port = 8000;
 let express = require('express');
 let favicon = require('serve-favicon');
 let path = require('path');
-const open = require("open");
+// const open = require("open");
 
 
 let app = express();
@@ -19,4 +19,4 @@ app.get('/', function(request, response) {
 app.listen(port, host);
 
 console.log(`Your app listening on: http://${host}:${port}`)
-open(`http://${host}:${port}`);
+// open(`http://${host}:${port}`);
