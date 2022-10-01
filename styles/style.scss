@@ -29,6 +29,7 @@ $AccentColorLight: #F9F5E8;
 .wrap {
     width: 100%;
     min-height: 100vh;
+    overflow-x: hidden;
 
     .main {
         width: 100%;
@@ -61,7 +62,7 @@ $AccentColorLight: #F9F5E8;
                     font-family: 'Montserrat';
                     font-style: normal;
                     font-weight: 900;
-                    font-size: calc(35px + 1vw);
+                    font-size: calc(45px + 1vw);
                     ;
                     line-height: 70px;
                     color: $PrimaryColor;
@@ -71,7 +72,7 @@ $AccentColorLight: #F9F5E8;
                         font-family: 'Montserrat';
                         font-style: normal;
                         font-weight: 900;
-                        font-size: calc(35px + 1vw);
+                        font-size: calc(45px + 1vw);
                         line-height: 70px;
                         color: $AccentColorLight;
                         background: $AccentColor;
@@ -212,7 +213,7 @@ $AccentColorLight: #F9F5E8;
 
         .features {
             width: 100%;
-            padding: 50px;
+            padding: 150px 50px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -250,12 +251,12 @@ $AccentColorLight: #F9F5E8;
                 width: 100%;
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                justify-content: space-around;
                 gap: 15px;
                 margin-top: 70px;
 
                 .features__item {
-                    width: 20%;
+                    width: 15%;
                     display: flex;
                     flex-direction: column;
                     gap: 15px;
@@ -286,6 +287,159 @@ $AccentColorLight: #F9F5E8;
                         height: 80px;
                         width: 80px;
                         margin-bottom: 25px;
+                    }
+                }
+            }
+        }
+
+        .coffee {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-left: 150px;
+            background: linear-gradient(90deg, #415167 0%, #415167 100%) no-repeat 0%;
+            background-size: 300px 100vh;
+
+            .coffee__headline-group {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+
+                .coffee__subheadline {
+                    font-family: 'Nunito', sans-serif;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: $PrimaryColor
+                }
+
+                .coffee__headline {
+                    font-family: 'Montserrat', sans-serif;
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 30px;
+                    line-height: 34px;
+                    color: $PrimaryColor;
+                    text-align: center;
+                }
+            }
+
+            .cofee__swiper {
+                width: 100%;
+
+
+                .swiper {
+                    width: 100%;
+                    height: 450px;
+                    margin-top: 50px;
+
+                    .swiper-slide {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+                        gap: 30px;
+
+                        .card {
+                            width: 100%;
+                            height: 50%;
+                            background: #FFFFFF;
+                            filter: drop-shadow(0px 4px 24px rgba(205, 205, 205, 0.5));
+                            display: flex;
+                            align-items: center;
+                            user-select: none;
+
+                            .card__image {
+                                height: 100%;
+                                width: 200px;
+                                object-fit: contain;
+                                background: $LightGray;
+                            }
+
+                            .card__info {
+                                height: 100%;
+                                padding: 40px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+
+                                .card__price {
+                                    font-family: 'Nunito', sans-serif;
+                                    font-style: 400;
+                                    font-weight: 600;
+                                    font-size: 20px;
+                                    line-height: 24px;
+                                    color: $AccentColor;
+                                    margin-bottom: 8px;
+                                }
+
+                                .card__name {
+                                    font-family: 'Nunito', sans-serif;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 24px;
+                                    line-height: 28px;
+                                    color: #232C38;
+                                }
+
+                                .card__description {
+                                    font-family: 'Nunito', sans-serif;
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 16px;
+                                    line-height: 22px;
+                                    color: #151D28;
+                                }
+
+                                .card__btn-place {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 10px;
+
+                                    .card__btn {
+                                        padding: 6px 15px;
+                                        color: #F9FBFF;
+                                        background: $AccentColor;
+                                        border-radius: 19px;
+                                        border: none;
+                                        outline: none;
+                                        cursor: pointer;
+                                    }
+    
+                                    .card__btn_white {
+                                        background: transparent;
+                                        color: $PrimaryColor;
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+
+                    .swiper-button-next {
+                        background: linear-gradient(270deg, #ffffff92 10.76%, rgba(255, 255, 255, 0) 100%);
+                        height: 520px;
+                        width: 13%;
+                        justify-content: flex-end;
+                        padding: 50px;
+                        top: 0;
+                        right: 0;
+
+                        &::after {
+                            content: '';
+                            height: 50px;
+                            width: 50px;
+                            border-radius: 50%;
+                            background: $AccentColor url('../image/icons/right-arrow.svg') no-repeat center;
+                            background-size: 25px;
+                        }
                     }
                 }
             }

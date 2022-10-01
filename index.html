@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -17,8 +21,8 @@
             <section class="home">
                 <!-- left -->
                 <div class="home__left">
-                    <img alt="logo" src="./image/logo.svg" class="home__logo">
-                    <h1 class="home__headline">
+                    <img alt="logo" src="./image/logo.svg" class="home__logo" data-aos="fade-right" data-aos-duration="600" data-aos-delay="0" data-aos-easing="linear">
+                    <h1 class="home__headline" data-aos="fade-right" data-aos-duration="600" data-aos-delay="600" data-aos-easing="linear">
                         YOUR <br>
                         <span class="home__typer"></span> <br>
                         COFFEE <br>
@@ -29,7 +33,8 @@
                     <div class="home__play-btn">
                         <div class="home__btn home__play"></div>
                     </div>
-                    <video preload="metadata" class="home__video" width="" height="900" poster="./image/video-poster.png">
+                    <video preload="metadata" class="home__video" width="" height="900"
+                        poster="./image/video-poster.png">
                         <source src="./videos/main.mp4" type="video/mp4">
                         <source src="./videos/main.webm" type="video/webm">
                     </video>
@@ -38,7 +43,8 @@
                 <div class="home__right">
                     <div class="cart">
                         <div class="cart__indicator">0</div>
-                        <img height="25" width="25" src="./image/icons/shopping-cart.svg" alt="cart" class="cart__image">
+                        <img height="25" width="25" src="./image/icons/shopping-cart.svg" alt="cart"
+                            class="cart__image">
                     </div>
                     <nav class="home__nav">
                         <div class="home__nav-item home__nav-item_active">TRANG CHỦ</div>
@@ -51,30 +57,158 @@
                 </div>
             </section>
             <section class="features">
-                <div class="features__headline-group">
+                <div class="features__headline-group" data-aos="flip-down">
                     <p class="features__subheadline">Your Personalized Coffee</p>
                     <h2 class="features__headline">COFFEE BUILD YOUR BASE</h2>
                 </div>
-                <div class="features__items">
+                <div class="features__items" data-aos="flip-up">
                     <div class="features__item">
                         <img height="80" width="80" src="./image/features/IC-1.svg" alt="icon" class="features__img">
                         <h3 class="features__item-headline">Nguồn gốc</h3>
-                        <div class="features__item-text">Những hạt cà phê Arabica, Robusta đạt chất lượng theo tiêu chuẩn quốc tế.</div>
+                        <div class="features__item-text">Những hạt cà phê Arabica, Robusta đạt chất lượng theo tiêu
+                            chuẩn quốc tế.</div>
                     </div>
-                    <div class="features__item">
+                    <div class="features__item" data-aos="flip-up">
                         <img height="80" width="80" src="./image/features/IC-2.svg" alt="icon" class="features__img">
-                        <h3 class="features__item-headline">Nguồn gốc</h3>
-                        <div class="features__item-text">Những hạt cà phê Arabica, Robusta đạt chất lượng theo tiêu chuẩn quốc tế.</div>
+                        <h3 class="features__item-headline">Chất lượng</h3>
+                        <div class="features__item-text">Từng một hạt cà phê là cả một quá trình tập trung cao độ của
+                            nghệ nhân cà phê.</div>
                     </div>
-                    <div class="features__item">
+                    <div class="features__item" data-aos="flip-up">
                         <img height="80" width="80" src="./image/features/ic.svg" alt="icon" class="features__img">
-                        <h3 class="features__item-headline">Nguồn gốc</h3>
-                        <div class="features__item-text">Những hạt cà phê Arabica, Robusta đạt chất lượng theo tiêu chuẩn quốc tế.</div>
+                        <h3 class="features__item-headline">Các loại hạt</h3>
+                        <div class="features__item-text">70% chất lượng tách cà phê đến từ nguồn gốc và chất lượng green
+                            bean.</div>
                     </div>
-                    <div class="features__item">
+                    <div class="features__item" data-aos="flip-up">
                         <img height="80" width="80" src="./image/features/ic1.svg" alt="icon" class="features__img">
-                        <h3 class="features__item-headline">Nguồn gốc</h3>
-                        <div class="features__item-text">Những hạt cà phê Arabica, Robusta đạt chất lượng theo tiêu chuẩn quốc tế.</div>
+                        <h3 class="features__item-headline">Pha chế</h3>
+                        <div class="features__item-text">Những hạt cà phê được lột xác qua quá trình rang xay kỹ lưỡng
+                            và nghiêm ngặt.</div>
+                    </div>
+                </div>
+            </section>
+            <section class="coffee">
+                <div class="coffee__headline-group" data-aos="flip-down">
+                    <p class="coffee__subheadline">Choose Your Favorite</p>
+                    <h2 class="coffee__headline">CHUẨN GU ĐÚNG VỊ</h2>
+                </div>
+                <div class="cofee__swiper">
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="card" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+                                    data-aos-delay="300" data-aos-offset="0">
+                                    <img src="./image/coffees/image1.png" height="100" width="100" class="card__image">
+                                    <div class="card__info">
+                                        <div class="card__text">
+                                            <div class="card__price">99.000</div>
+                                            <div class="card__name">REVO Morning</div>
+                                        </div>
+                                        <div class="card__description">
+                                            đắng, hậu ngọt, hương hoa
+                                        </div>
+                                        <div class="card__btn-place">
+                                            <button class="card__btn">MUA NGAY</button>
+                                            <button class="card__btn card__btn_white">CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+                                    data-aos-delay="0" data-aos-offset="0">
+                                    <img src="./image/coffees/image2.png" height="100" width="100" class="card__image">
+                                    <div class="card__info">
+                                        <div class="card__text">
+                                            <div class="card__price">139.000</div>
+                                            <div class="card__name">REVO Origin</div>
+                                        </div>
+                                        <div class="card__description">
+                                            hậu ngọt, ít đắng, vị chua dâu
+                                        </div>
+                                        <div class="card__btn-place">
+                                            <button class="card__btn">MUA NGAY</button>
+                                            <button class="card__btn card__btn_white">CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+                                    data-aos-delay="0" data-aos-offset="0">
+                                    <img src="./image/coffees/image3.png" height="100" width="100" class="card__image">
+                                    <div class="card__info">
+                                        <div class="card__text">
+                                            <div class="card__price">85.000</div>
+                                            <div class="card__name">REVO Everyday</div>
+                                        </div>
+                                        <div class="card__description">
+                                            cân bằng, hậu đắng, vị chocolate
+                                        </div>
+                                        <div class="card__btn-place">
+                                            <button class="card__btn">MUA NGAY</button>
+                                            <button class="card__btn card__btn_white">CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+                                    data-aos-delay="300" data-aos-offset="0">
+                                    <img src="./image/coffees/image4.png" height="100" width="100" class="card__image">
+                                    <div class="card__info">
+                                        <div class="card__text">
+                                            <div class="card__price">75.000</div>
+                                            <div class="card__name">REVO Đậm Đà</div>
+                                        </div>
+                                        <div class="card__description">
+                                            đậm đà, đắng, truyền thống
+                                        </div>
+                                        <div class="card__btn-place">
+                                            <button class="card__btn">MUA NGAY</button>
+                                            <button class="card__btn card__btn_white">CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+                                    data-aos-delay="300" data-aos-offset="0">
+                                    <img src="./image/coffees/image5.png" height="100" width="100" class="card__image">
+                                    <div class="card__info">
+                                        <div class="card__text">
+                                            <div class="card__price">195.000</div>
+                                            <div class="card__name">REVO Honey</div>
+                                        </div>
+                                        <div class="card__description">
+                                            độ ngọt cao, hậu ngọt, chua họ táo
+                                        </div>
+                                        <div class="card__btn-place">
+                                            <button class="card__btn">MUA NGAY</button>
+                                            <button class="card__btn card__btn_white">CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+                                    data-aos-delay="0" data-aos-offset="0">
+                                    <img src="./image/coffees/image6.png" height="100" width="100" class="card__image">
+                                    <div class="card__info">
+                                        <div class="card__text">
+                                            <div class="card__price">169.000</div>
+                                            <div class="card__name">REVO Natural</div>
+                                        </div>
+                                        <div class="card__description">
+                                            hậu ngọt, hương hoa, vị chua dâu
+                                        </div>
+                                        <div class="card__btn-place">
+                                            <button class="card__btn">MUA NGAY</button>
+                                            <button class="card__btn card__btn_white">CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
             </section>
@@ -85,6 +219,10 @@
     </div>
     <script src="./javaScript/main.js"></script>
     <script src="./javaScript/typed.js"></script>
+    <script src="./javaScript/swiper.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
