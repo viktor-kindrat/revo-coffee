@@ -9,7 +9,7 @@ let path = require('path');
 
 let app = express();
 
-app.use(express.static(__dirname));
+app.use(express.static(__dirname + '/'));
 // app.use(favicon(path.join(__dirname, 'image', 'favicon.ico')))
 
 app.get('/', function(request, response) {
