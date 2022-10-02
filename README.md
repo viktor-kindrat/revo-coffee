@@ -9,5 +9,5 @@ npm i express
 To start app:
 
 ```
-node app
+node script
 ```
