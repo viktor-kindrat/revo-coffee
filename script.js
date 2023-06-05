@@ -1,5 +1,5 @@
 let host = '127.0.0.1';
-let port = 8000;
+let port = process.env.PORT || 8000;
 
 let express = require('express');
 let favicon = require('serve-favicon');
@@ -16,7 +16,6 @@ app.get('/', function(request, response) {
     response.sendFile(__dirname + '/index.html')
 })
 
-app.listen(port, host);
+app.listen(port, ()=>console.log(`Your app listening on ${port}`));
 
-console.log(`Your app listening on: http://${host}:${port}`)
 open(`http://${host}:${port}`);
